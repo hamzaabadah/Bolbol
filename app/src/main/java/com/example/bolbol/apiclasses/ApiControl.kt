@@ -10,6 +10,7 @@ import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.example.bolbol.adapters.CategoriesAdapter
 import com.example.bolbol.adapters.PlacesAdapter
+import com.example.bolbol.adapters.RecyclerViewOnItemClick
 import com.example.bolbol.models.Category
 import com.example.bolbol.models.Places
 import kotlinx.android.synthetic.main.fragment_main_navigation.view.*
@@ -30,11 +31,11 @@ class ApiControl(var context: Context){
             }
     }
 
-     fun getAllCategories(root: View){
+     fun getAllCategories(root: View ){
         val urlAllCategories = "http://bolbol.effect.ps/api/v1/categories"
 
         val getAllCategoriesJsonObjectRequest = object : JsonObjectRequest(
-            Request.Method.GET, urlAllCategories, null,
+            Request.Method.GET, ApiLinks.AllCategories, null,
             Response.Listener { responce->
                 if (responce.getBoolean("status")){
 
@@ -43,11 +44,12 @@ class ApiControl(var context: Context){
                     val array = responce.getJSONArray("data")
                     for (i in 0 until array.length()) {
                         var arrayIn= array.getJSONObject(i)
-                        var name = arrayIn.getString("name")
-                        var id = arrayIn.getInt("id")
-                        var category = Category(id,name)
-                        data.add(category)
-                        Log.d("Tag", name)
+
+                            var name = arrayIn.getString("name")
+                            var id = arrayIn.getInt("id")
+                            var category = Category(id,name)
+                            data.add(category)
+                            Log.d("Tag", name)
 
                     }
                     Log.d("Tag", data.size.toString())
@@ -83,7 +85,7 @@ class ApiControl(var context: Context){
     }
 
     fun getAllPlaces(root: View, categoryid : Int){
-        val urlAllPlaces = "http://bolbol.effect.ps/api/v1/places"
+        var urlAllPlaces = "http://bolbol.effect.ps/api/v1/places?category_id="+categoryid
 
         val getAllPlacesJsonObjectRequest = object : JsonObjectRequest(
             Request.Method.GET, urlAllPlaces, null,

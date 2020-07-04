@@ -5,6 +5,10 @@ import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.TextView
+import androidx.appcompat.widget.AppCompatAutoCompleteTextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bolbol.R
@@ -13,10 +17,14 @@ import com.example.bolbol.models.Category
 import kotlinx.android.synthetic.main.fragment_main_navigation.view.*
 import kotlinx.android.synthetic.main.row_all_categories.view.*
 
-class CategoriesAdapter (var context: Context, var data: ArrayList<Category> , var root : View):
+class CategoriesAdapter (var context: Context, var data: ArrayList<Category> , var root : View ):
     RecyclerView.Adapter<CategoriesAdapter.MyViewHolder>() {
 
+
+
     private var selectedPos = 0
+
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoriesAdapter.MyViewHolder {
         val root = LayoutInflater.from(parent.context).inflate(R.layout.row_all_categories, parent, false)
@@ -48,15 +56,31 @@ class CategoriesAdapter (var context: Context, var data: ArrayList<Category> , v
 
     }
 
-    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)  {
         val category_type= itemView.category_type
         val linear_row= itemView.linear_row
-    }
 
 
-    fun setSelectedPos(selectedPos: Int) {
-        this.selectedPos = selectedPos
-        notifyDataSetChanged()
     }
+
+//
+//    class ViewHolder(itemView: View, onNoteListener: RecyclerViewOnItemClick) :
+//        RecyclerView.ViewHolder(itemView), View.OnClickListener {
+//        var category_type = itemView.category_type
+//        var linear_row = itemView.linear_row
+//
+//        var onNoteListener: RecyclerViewOnItemClick
+//        override fun onClick(view: View) {
+//            onNoteListener.onItemClick(adapterPosition)
+//        }
+//
+//        init {
+//            this.onNoteListener = onNoteListener
+//            itemView.setOnClickListener(this)
+//        }
+//
+//
+//    }
+
 
 }

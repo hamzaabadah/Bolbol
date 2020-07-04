@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".orderfragments.NewOrderFragment"
+    android:orientation="vertical"
+    android:background="@color/back_ground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Back"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/thesansarab_semilight"
+            android:textSize="@dimen/_13ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlCompat"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="New Order"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/thesansarab_plain"
+            android:textSize="@dimen/_15ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlCompat"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/place_cover"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:background="@color/tabs"
+                >
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/linear_place_row"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/place_logo"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:src="@drawable/ic_launcher_background"
+                        />
+
+                    <LinearLayout
+                        android:layout_toEndOf="@id/place_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/name_place"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tapon restaurant"
+                            android:textSize="@dimen/_15ssp"
+                            android:fontFamily="@font/thesansarab_semibold"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tapon"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/login_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linear_background"
+                android:orientation="vertical"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_minus40sdp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/price_image"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_launcher_background"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_25sdp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignEnd="@+id/price_image"
+                        android:id="@+id/price"
+                        android:text="price"
+                        android:layout_marginEnd="@dimen/_40sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_view_color"
+                        android:textSize="@dimen/_15ssp"
+                        android:fontFamily="@font/thesansarab_light"
+
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_centerVertical="true"
+                        android:text="10"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_view_color"
+                        android:textSize="@dimen/_15ssp"
+                        android:fontFamily="@font/thesansarab_light"
+                        android:layout_alignParentStart="true"
+                        />
+
+
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/back_ground">
+
+                </View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/dirc_image"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_launcher_background"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_25sdp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignEnd="@+id/dirc_image"
+                        android:id="@+id/dirc"
+                        android:text="price"
+                        android:layout_marginEnd="@dimen/_40sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_view_color"
+                        android:textSize="@dimen/_15ssp"
+                        android:fontFamily="@font/thesansarab_light"
+
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_centerVertical="true"
+                        android:text="10"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_view_color"
+                        android:textSize="@dimen/_15ssp"
+                        android:fontFamily="@font/thesansarab_light"
+                        android:layout_alignParentStart="true"
+                        />
+
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/linear_background"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                >
+
+                <ImageView
+                    android:id="@+id/recive_image"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_launcher_background"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_25sdp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignEnd="@+id/recive_image"
+                    android:id="@+id/recive"
+                    android:text="price"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_view_color"
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/thesansarab_light"
+
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_launcher_background"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentStart="true"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/linear_background">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_margin="@dimen/_5sdp"
+                    android:id="@+id/EditText02"
+                    android:background="@drawable/linear_background"
+                    android:hint="أضف تفاصيل الطلب"
+                    android:textColorHint="@color/edit_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:lines="5"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/send_order_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_background"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/thesansarab_plain"
+                android:text="Send Request"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

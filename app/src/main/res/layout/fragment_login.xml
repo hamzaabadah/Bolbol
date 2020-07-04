@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".userfragments.LoginFragment"
+    android:orientation="vertical"
+    android:id="@+id/linrtl"
+    android:background="@color/back_ground"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/welcomeText"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/name_fragment_login"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_18ssp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlCompat"
+            android:fontFamily="@font/thesansarab_bold"
+            />
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/login_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linear_background"
+        android:orientation="vertical"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_minus50sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/log_in_user_name"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="0.85"
+                android:background="@null"
+
+                android:inputType="text"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_view_color"
+                android:hint="@string/user_name"
+                android:textColorHint="@color/edit_text_color"
+                android:textSize="@dimen/_12ssp"
+                android:textDirection="rtl"
+                android:fontFamily="@font/thesansarab_light"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_weight="0.15"
+                android:text="@string/user_name"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_view_color"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/thesansarab_light"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/back_ground">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:fontFamily="@font/thesansarab_light"
+                android:id="@+id/log_in_password"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="0.85"
+                android:background="@null"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_view_color"
+                android:textColorHint="@color/edit_text_color"
+                android:textSize="@dimen/_12ssp"
+                android:textDirection="rtl"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_weight="0.15"
+                android:fontFamily="@font/thesansarab_light"
+                android:text="@string/password"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_view_color"
+                android:textSize="@dimen/_12ssp"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/log_in_forget_password"
+        android:text="هل نسيت كلمة المرور؟"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_view_color"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        tools:ignore="RtlCompat"
+        android:fontFamily="@font/thesansarab_extralight"/>
+
+    <Button
+        android:id="@+id/log_in_button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/thesansarab_plain"
+        android:text="@string/name_fragment_login"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12ssp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/log_in_button_sing_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_account"
+            android:inputType="text"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/text_view_color"
+            android:fontFamily="@font/thesansarab_bold"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_toEndOf="@+id/log_in_button_sing_up"
+            android:text="@string/dont_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/edit_text_color"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/thesansarab_light"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

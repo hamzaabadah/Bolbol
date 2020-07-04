@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">bolbol</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_name">إسم المستخدم</string>
+    <string name="name_fragment_login">تسجيل دخول</string>
+    <string name="password">كلمة المرور</string>
+    <string name="create_account">إنشاء حساب جديد</string>
+    <string name="dont_have_account">ليس لديك حساب؟ يمكنك </string>
+
+    <!-- TODO: Main Fragment Tabs Names-->
+    <string name="restaurants_tab">Restaurants</string>
+    <string name="groceries_tab">Groceries</string>
+    <string name="pharmacies_tab">Pharmacies</string>
+
+</resources>

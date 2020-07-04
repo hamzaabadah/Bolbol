@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".accountfragments.WhoUsTermsConditionsFragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+       >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/who_us_terms_back"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Back"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/thesansarab_semilight"
+            android:textSize="@dimen/_13ssp"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlCompat"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/who_us_terms_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/thesansarab_bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_18ssp"
+            android:layout_marginStart="@dimen/_20sdp"
+            />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/who_us_terms_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:fontFamily="@font/thesansarab_semilight"
+        android:textSize="@dimen/_13ssp"/>
+
+</LinearLayout>

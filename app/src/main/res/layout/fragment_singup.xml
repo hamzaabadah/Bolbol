@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".userfragments.SingupFragment"
+    android:orientation="vertical"
+    android:background="@color/back_ground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/welcomeText"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="عودة"
+                android:fontFamily="@font/thesansarab_semilight"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13ssp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlCompat"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:fontFamily="@font/thesansarab_bold"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_90sdp"
+                android:text="تسجيل حساب جديد "
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_18ssp"
+                android:layout_marginEnd="@dimen/_20sdp"/>
+
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_minus40sdp"
+            >
+
+            <include layout="@layout/conent_singup_scrolling" />
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".accountfragments.EditProfileFragment"
+    android:background="@color/back_ground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar_edit_profile">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edit_profile_back"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Back"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/thesansarab_semilight"
+            android:textSize="@dimen/_13ssp"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlCompat"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_130sdp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar_edit_profile"
+        android:id="@+id/linear_edit_profile">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:fontFamily="@font/thesansarab_bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_18ssp"
+            android:layout_marginStart="@dimen/_20sdp"
+            />
+
+        <ImageView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/edit_profile_image"
+            android:background="@drawable/image_profile_background"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/name_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linear_background"
+        android:orientation="vertical"
+        android:layout_below="@+id/linear_edit_profile"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_10sdp"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_weight="0.3"
+                android:text="Full Name"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_view_color"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/thesansarab_light"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_profile_full_name"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@null"
+                android:hint="Full Name "
+                android:inputType="text"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_view_color"
+                android:textColorHint="@color/edit_text_color"
+                android:textSize="@dimen/_12ssp"
+                android:textDirection="rtl"
+                android:fontFamily="@font/thesansarab_light"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/back_ground">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_10sdp"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_weight="0.3"
+                android:text="User Name"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_view_color"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/thesansarab_light"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:fontFamily="@font/thesansarab_light"
+                android:id="@+id/edit_profile_user_name"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@null"
+                android:hint="User Name"
+                android:inputType="text"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_view_color"
+                android:textColorHint="@color/edit_text_color"
+                android:textSize="@dimen/_12ssp"
+                android:textDirection="rtl"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/name_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/linear_background"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_weight="0.3"
+                android:text="Email"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_view_color"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/thesansarab_light"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_profile_email"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@null"
+                android:hint="Email "
+                android:inputType="textEmailAddress"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_view_color"
+                android:textColorHint="@color/edit_text_color"
+                android:textSize="@dimen/_12ssp"
+                android:textDirection="rtl"
+                android:fontFamily="@font/thesansarab_light"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/back_ground">
+
+        </View>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_weight="0.3"
+                android:text="Phone Number"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_view_color"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/thesansarab_light"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:fontFamily="@font/thesansarab_light"
+                android:id="@+id/edit_profile_phone"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@null"
+                android:hint="Phone Number "
+                android:inputType="phone"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_view_color"
+                android:textColorHint="@color/edit_text_color"
+                android:textSize="@dimen/_12ssp"
+                android:textDirection="rtl"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/back_ground">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_weight="0.3"
+                android:text="City"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_view_color"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/thesansarab_light"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/sing_up_city"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@null"
+                android:hint="Choose City "
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_view_color"
+                android:textSize="@dimen/_12ssp"
+                android:textColorHint="@color/edit_text_color"
+                android:textDirection="rtl"
+                android:fontFamily="@font/thesansarab_light"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/edit_profile_save_data_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:fontFamily="@font/thesansarab_plain"
+        android:text="Save Data"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_13ssp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        />
+
+
+</RelativeLayout>

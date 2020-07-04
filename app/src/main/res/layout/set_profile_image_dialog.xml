@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/liner_gallery_camera"
+        android:background="@drawable/linear_background"
+        android:backgroundTint="@color/back_ground"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/photo_in_gallery"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Photo from gallery"
+            android:gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/thesansarab_plain"
+            android:textColor="@color/text_view_color"/>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#707070">
+
+        </View>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/photo_in_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Photo from camera"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/thesansarab_plain"
+            android:textColor="@color/text_view_color"/>
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_below="@+id/liner_gallery_camera"
+        android:id="@+id/close_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background_no"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:fontFamily="@font/thesansarab_extrabold"
+        android:text="Cancel"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_13ssp"
+
+        />
+
+
+
+</RelativeLayout>

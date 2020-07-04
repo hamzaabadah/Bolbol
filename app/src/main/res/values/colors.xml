@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#007AFF</color>
+    <color name="colorPrimaryDark">#007AFF</color>
+    <color name="colorAccent">#007AFF</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="text_view_color">#444444</color>
+    <color name="edit_text_color">#AAAAAA</color>
+    <color name="back_ground">#F2F2F2</color>
+    <color name="logout">#FF3B30</color>
+    <color name="search_back_ground">#979797</color>
+    <color name="tabs">#555555</color>
+
+
+
+</resources>
+
+

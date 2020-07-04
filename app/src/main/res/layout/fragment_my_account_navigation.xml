@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appcontrolfragments.MyAccountNavigationFragment"
+    android:orientation="vertical"
+    android:background="@color/back_ground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Profile Personly"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_18ssp"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlCompat"
+            android:fontFamily="@font/thesansarab_bold"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_130sdp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/profile_image"
+            android:background="@drawable/image_profile_background"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/profile_full_name"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usr Full  Name"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/thesansarab_bold"
+            android:textSize="@dimen/_12ssp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Details"
+                android:textAlignment="textStart"
+                android:textColor="@color/edit_text_color"
+                android:fontFamily="@font/thesansarab_light"
+                android:textSize="@dimen/_12ssp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linear_background"
+                android:orientation="vertical"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:id="@+id/my_account_edit_profile"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/image_edit_profile"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_toEndOf="@+id/image_edit_profile"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:text="Edit profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_view_color"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/thesansarab_light"
+                        />
+
+                    <ImageView
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        />
+
+
+
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/back_ground">
+
+                </View>
+
+                <RelativeLayout
+                    android:id="@+id/my_account_change_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/image_change_pass"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_toEndOf="@+id/image_change_pass"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:text="Change Password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_view_color"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/thesansarab_light"
+                        />
+
+                    <ImageView
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        />
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Details"
+                android:textAlignment="textStart"
+                android:textColor="@color/edit_text_color"
+                android:fontFamily="@font/thesansarab_light"
+                android:textSize="@dimen/_12ssp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linear_background"
+                android:orientation="vertical"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/my_account_contact_with_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/image_contact_with_us"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_toEndOf="@+id/image_contact_with_us"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:text="Connect with us"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_view_color"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/thesansarab_light"
+                        />
+
+                    <ImageView
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        />
+
+
+
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/back_ground">
+
+                </View>
+
+                <RelativeLayout
+                    android:id="@+id/my_account_who_are_we"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/image_who_are_we"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_toEndOf="@+id/image_who_are_we"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:text="Who are we"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_view_color"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/thesansarab_light"
+                        />
+
+                    <ImageView
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        />
+
+
+
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/back_ground">
+
+                </View>
+
+                <RelativeLayout
+                    android:id="@+id/my_account_terms_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/image_terms_and_conditions"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_toEndOf="@+id/image_terms_and_conditions"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:text="Terms and Conditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_view_color"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/thesansarab_light"
+                        />
+
+                    <ImageView
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        />
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linear_background"
+                android:orientation="vertical"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/my_account_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <ImageView
+
+                        android:id="@+id/image_logout"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_toEndOf="@+id/image_logout"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:text="Logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_view_color"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/thesansarab_light"
+                        />
+
+                    <ImageView
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>

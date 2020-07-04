@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/_15sdp"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:orientation="vertical"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linear_background"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_10sdp"
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/sing_up_full_name"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.85"
+                android:background="@null"
+                android:hint="الإسم كاملا "
+                android:inputType="text"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_view_color"
+                android:textColorHint="@color/edit_text_color"
+                android:textSize="@dimen/_12ssp"
+                android:textDirection="rtl"
+                android:fontFamily="@font/thesansarab_light"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_weight="0.15"
+                android:text="الإسم كاملا"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_view_color"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/thesansarab_light"
+                />
+
+
+
+        </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/back_ground">
+
+            </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_10sdp"
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:fontFamily="@font/thesansarab_light"
+                android:id="@+id/sing_up_user_name"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.85"
+                android:background="@null"
+                android:hint="@string/user_name"
+                android:inputType="text"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_view_color"
+                android:textColorHint="@color/edit_text_color"
+                android:textSize="@dimen/_12ssp"
+                android:textDirection="rtl"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_weight="0.15"
+                android:text="@string/user_name"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_view_color"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/thesansarab_light"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:background="@drawable/linear_background"
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_margin="@dimen/_10sdp"
+            android:id="@+id/sing_up_password"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:background="@null"
+            android:hint="كلمة المرور "
+            android:inputType="textPassword"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/text_view_color"
+            android:textColorHint="@color/edit_text_color"
+            android:textSize="@dimen/_12ssp"
+            android:textDirection="rtl"
+            android:fontFamily="@font/thesansarab_light"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="0.15"
+            android:text="كلمة المرور"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_view_color"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/thesansarab_light"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/linear_background"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal"
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/sing_up_email"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.85"
+                    android:background="@null"
+                    android:hint="البريد الالكتروني "
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/text_view_color"
+                    android:textColorHint="@color/edit_text_color"
+                    android:textSize="@dimen/_12ssp"
+                    android:textDirection="rtl"
+                    android:fontFamily="@font/thesansarab_light"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_weight="0.15"
+                    android:text="البريد الالكتروني"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_view_color"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/thesansarab_light"
+                    />
+
+
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/back_ground">
+
+            </View>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal"
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:fontFamily="@font/thesansarab_light"
+                    android:id="@+id/sing_up_phone"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.85"
+                    android:background="@null"
+                    android:hint="رقم الجوال "
+                    android:inputType="phone"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/text_view_color"
+                    android:textColorHint="@color/edit_text_color"
+                    android:textSize="@dimen/_12ssp"
+                    android:textDirection="rtl"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_weight="0.15"
+                    android:text="رقم الجوال"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_view_color"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/thesansarab_light"
+                    />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/back_ground">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal"
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/sing_up_city"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.85"
+                    android:background="@null"
+                    android:hint="اختر مدينة "
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/text_view_color"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColorHint="@color/edit_text_color"
+                    android:textDirection="rtl"
+                    android:fontFamily="@font/thesansarab_light"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_weight="0.15"
+                    android:text="المدينة"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_view_color"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/thesansarab_light"
+                    />
+
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/checkbox_meat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="أوافق على شروط الخدمة وسياسة الاستخدام"
+        android:textColor="@color/edit_text_color"
+        android:textSize="@dimen/_9ssp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/thesansarab_light"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            >
+            <Button
+                android:id="@+id/sing_up_button_singup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_background"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/thesansarab_plain"
+                android:text="إنشاء الحساب"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13ssp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_below="@+id/sing_up_button_singup"
+                android:padding="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:gravity="center"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/sing_up_button_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تسجيل الدخول"
+                    android:inputType="text"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/text_view_color"
+                    android:fontFamily="@font/thesansarab_semibold"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_toEndOf="@+id/sing_up_button_login"
+                    android:text="لديك حساب؟ يمكنك "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/edit_text_color"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/thesansarab_extralight"
+                    />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>
